@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap');
+
+*
+{
+  margin: 0;
+  font-family: 'Readex Pro', sans-serif;
+  transition-duration: 0.1s;
+}
+
+body
+{
+  font-size: 14.5px;
+}
+
+main
+{
+  max-width: 300px;
+  text-align: left;
+  padding: 40px;
+}
+
+nav
+{
+  background: indianred;
+  color: white;
+  display: flex;
+  padding: 0px 25px;
+  font-size: small;
+}
+
+nav a
+{
+  color: inherit;
+  padding: 20px;
+  text-decoration: none;
+  margin: 0;
+}
+
+nav a:hover
+{
+  background: rgba(0, 0, 0, 0.055);
+}
+
+body *
+{
+  margin-bottom: 10px;
+}
+
+input, button, div[contenteditable]
+{
+  padding: 10px;
+  border: 1px solid lightgray;
+  outline: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+input, div[contenteditable]
+{
+  color: gray;
+}
+
+input:focus, div[contenteditable]:focus
+{
+  color: black;
+}
+
+button
+{
+  font-weight: bold;
+  background: indianred;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+img.pfp
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: lightgray;
+}
+
+label[for] img:hover
+{
+  cursor: pointer;
+  filter: brightness(0.90);
+}
+
+h1, h2, h3, a
+{
+  color: indianred;
+}
+
+a
+{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.list li
+{
+  padding: 10px 0px;
+  margin: 0;
+}
+
+ul.list li:not(:last-child)
+{
+  border-bottom: 1px solid lightgray;
+}
+
+ul.list li a:not(.link)
+{
+  color: inherit;
+  font-weight: inherit;
+  display: block;
+  margin: 0;
+}
+
+ul.list li a:not(.link)::after
+{
+  content: '→';
+  margin-left: 5px;
+  transition-duration: 0.1s;
+}
+
+ul.list li a:not(.link):hover::after
+{
+  margin-left: 10px;
+}
+
+small
+{
+  display: block;
+}
+
+[onclick]
+{
+  cursor: pointer;
+}
